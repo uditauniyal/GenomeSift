@@ -1,0 +1,16 @@
+gene,position,ref,alt,disease,severity
+HBB_Healthy_Reference,19,A,T,Sickle Cell Disease,HIGH
+HBB_Healthy_Reference,80,G,A,Beta Thalassemia Major,HIGH
+HBB_Healthy_Reference,26,G,A,Hemoglobin E Disease,MEDIUM
+HBB_Healthy_Reference,6,A,T,Sickle Cell Trait,HIGH
+HBB_Healthy_Reference,39,C,T,Beta Thalassemia (Codon 39),HIGH
+BRCA1_Reference,185,A,G,Hereditary Breast Cancer Risk,HIGH
+CFTR,1521,G,T,Cystic Fibrosis (G551D),HIGH
+CFTR,508,C,T,Cystic Fibrosis (Delta F508),CRITICAL
+HFE,845,G,A,Hereditary Hemochromatosis,MEDIUM
+HFE,187,C,G,Hereditary Hemochromatosis Type 2,MEDIUM
+MTHFR,677,C,T,Folate Metabolism Disorder,LOW
+MTHFR,1298,A,C,Methylation Deficiency,LOW
+FV,1691,G,A,Factor V Leiden Thrombophilia,MEDIUM
+APOE,388,T,C,Alzheimer Disease Risk,MEDIUM
+G6PD,202,G,A,G6PD Deficiency (Favism),MEDIUM

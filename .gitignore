@@ -1,0 +1,18 @@
+# C++ Compilation
+*.o
+*.out
+*.exe
+genomesift
+
+# Python / Flask
+__pycache__/
+*.pyc
+.env
+venv/
+env/
+reports/
+
+# React / Node
+frontend/node_modules/
+frontend/build/
+.DS_Store

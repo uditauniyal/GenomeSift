@@ -1,0 +1,263 @@
+﻿g++ : In file included from 
+src/main.cpp:8:0:
+At line:1 char:1
++ g++ -std=c++17 -Wall 
+-Wextra -Iinclude 
+src/main.cpp 
+src/sequence/Sequ ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~
+    + CategoryInfo           
+   : NotSpecifi    ed: (In 
+file inclu    ded from 
+src/main.    
+cpp:8:0::String) [    ], 
+RemoteException
+    + FullyQualifiedEr    
+rorId : NativeComm    
+andError
+ 
+src/../include/sequence/RNASe
+quence.h: In constructor 'RNA
+Sequence::RNASequence(const 
+string&, const string&)':
+src/../include/sequence/RNASe
+quence.h:15:31: warning: 
+comparison between signed 
+and unsigned integer 
+expressions [-Wsign-compare]
+             for (int i = 0; 
+i < sequence.length(); ++i) {
+                             
+~~^~~~~~~~~~~~~~~~~~~
+src/main.cpp: In function 
+'int main(int, char**)':
+src/main.cpp:87:10: warning: 
+unused variable 
+'algorithmSet' 
+[-Wunused-variable]
+     bool algorithmSet = 
+true;
+          ^~~~~~~~~~~~
+In file included from src/../
+include/alignment/AlignmentSt
+rategy.h:5:0,
+                 from src/../
+include/alignment/Aligner.h:3
+,
+                 from 
+src/main.cpp:11:
+src/../include/alignment/../s
+coring/ScoringMatrix.h: In 
+instantiation of 'ScoringMatr
+ix<T>::ScoringMatrix(T, T, 
+T) [with T = int]':
+src/../include/scoring/Substi
+tutionMatrix.h:8:44:   
+required from here
+src/../include/alignment/../s
+coring/ScoringMatrix.h:17:7: 
+warning: 'ScoringMatrix<int>:
+:mismatchScore' will be 
+initialized after [-Wreorder]
+     T mismatchScore;
+       ^~~~~~~~~~~~~
+src/../include/alignment/../s
+coring/ScoringMatrix.h:15:7: 
+warning:   'int ScoringMatrix
+<int>::gapPenalty' 
+[-Wreorder]
+     T gapPenalty;
+       ^~~~~~~~~~
+src/../include/alignment/../s
+coring/ScoringMatrix.h:20:5: 
+warning:   when initialized 
+here [-Wreorder]
+     ScoringMatrix(T match, 
+T mismatch, T gap)
+     ^~~~~~~~~~~~~
+src/../include/alignment/../s
+coring/ScoringMatrix.h: In 
+instantiation of 'ScoringMatr
+ix<T>::ScoringMatrix(T, T, 
+T) [with T = double]':
+src/../include/scoring/Substi
+tutionMatrix.h:28:53:   
+required from here
+src/../include/alignment/../s
+coring/ScoringMatrix.h:17:7: 
+warning: 'ScoringMatrix<doubl
+e>::mismatchScore' will be 
+initialized after [-Wreorder]
+     T mismatchScore;
+       ^~~~~~~~~~~~~
+src/../include/alignment/../s
+coring/ScoringMatrix.h:15:7: 
+warning:   'double ScoringMat
+rix<double>::gapPenalty' 
+[-Wreorder]
+     T gapPenalty;
+       ^~~~~~~~~~
+src/../include/alignment/../s
+coring/ScoringMatrix.h:20:5: 
+warning:   when initialized 
+here [-Wreorder]
+     ScoringMatrix(T match, 
+T mismatch, T gap)
+     ^~~~~~~~~~~~~
+In file included from src/seq
+uence/DNASequence.cpp:2:0:
+src/sequence/../../include/se
+quence/RNASequence.h: In 
+constructor 'RNASequence::RNA
+Sequence(const string&, 
+const string&)':
+src/sequence/../../include/se
+quence/RNASequence.h:15:31: 
+warning: comparison between 
+signed and unsigned integer 
+expressions [-Wsign-compare]
+             for (int i = 0; 
+i < sequence.length(); ++i) {
+                             
+~~^~~~~~~~~~~~~~~~~~~
+In file included from src/seq
+uence/RNASequence.cpp:1:0:
+src/sequence/../../include/se
+quence/RNASequence.h: In 
+constructor 'RNASequence::RNA
+Sequence(const string&, 
+const string&)':
+src/sequence/../../include/se
+quence/RNASequence.h:15:31: 
+warning: comparison between 
+signed and unsigned integer 
+expressions [-Wsign-compare]
+             for (int i = 0; 
+i < sequence.length(); ++i) {
+                             
+~~^~~~~~~~~~~~~~~~~~~
+src/sequence/ProteinSequence.
+cpp: In member function 
+'virtual char ProteinSequence
+::complement(char) const':
+src/sequence/ProteinSequence.
+cpp:32:39: warning: unused 
+parameter 'base' 
+[-Wunused-parameter]
+ char ProteinSequence::comple
+ment(char base) const {
+                             
+          ^~~~
+src/alignment/NeedlemanWunsch
+.cpp: In member function 
+'virtual AlignmentResult 
+NeedlemanWunsch::align(const 
+Sequence&, const Sequence&, 
+const ScoringMatrix<int>&)':
+src/alignment/NeedlemanWunsch
+.cpp:15:10: error: expected 
+unqualified-id before '[' 
+token
+     auto [aligned1, 
+aligned2] = 
+traceback(matrix, s1, s2, 
+scoring);
+          ^
+src/alignment/NeedlemanWunsch
+.cpp:19:28: error: 
+'aligned1' was not declared 
+in this scope
+     AlignmentResult 
+result(aligned1, aligned2, 
+seq1.getName(), 
+seq2.getName(), finalScore, 
+getName());
+                            
+^~~~~~~~
+src/alignment/NeedlemanWunsch
+.cpp:19:38: error: 
+'aligned2' was not declared 
+in this scope
+     AlignmentResult 
+result(aligned1, aligned2, 
+seq1.getName(), 
+seq2.getName(), finalScore, 
+getName());
+                             
+         ^~~~~~~~
+src/alignment/SmithWaterman.c
+pp: In member function 
+'virtual AlignmentResult 
+SmithWaterman::align(const 
+Sequence&, const Sequence&, 
+const ScoringMatrix<int>&)':
+src/alignment/SmithWaterman.c
+pp:19:10: error: expected 
+unqualified-id before '[' 
+token
+     auto [aligned1, 
+aligned2] = 
+traceback(matrix, s1, s2, 
+scoring, maxI, maxJ);
+          ^
+src/alignment/SmithWaterman.c
+pp:21:28: error: 'aligned1' 
+was not declared in this 
+scope
+     AlignmentResult 
+result(aligned1, aligned2, 
+seq1.getName(), 
+seq2.getName(), maxScore, 
+getName());
+                            
+^~~~~~~~
+src/alignment/SmithWaterman.c
+pp:21:38: error: 'aligned2' 
+was not declared in this 
+scope
+     AlignmentResult 
+result(aligned1, aligned2, 
+seq1.getName(), 
+seq2.getName(), maxScore, 
+getName());
+                             
+         ^~~~~~~~
+In file included from src/ali
+gnment/../../include/alignmen
+t/AlignmentStrategy.h:5:0,
+                 from src/ali
+gnment/../../include/alignmen
+t/Aligner.h:3,
+                 from 
+src/alignment/Aligner.cpp:1:
+c:\users\uniya\genomesift\inc
+lude\scoring\scoringmatrix.h:
+ In instantiation of 'Scoring
+Matrix<T>::ScoringMatrix(T, 
+T, T) [with T = int]':
+src/alignment/Aligner.cpp:8:4
+3:   required from here
+c:\users\uniya\genomesift\inc
+lude\scoring\scoringmatrix.h:
+17:7: warning: 'ScoringMatrix
+<int>::mismatchScore' will 
+be initialized after 
+[-Wreorder]
+     T mismatchScore;
+       ^~~~~~~~~~~~~
+c:\users\uniya\genomesift\inc
+lude\scoring\scoringmatrix.h:
+15:7: warning:   'int Scoring
+Matrix<int>::gapPenalty' 
+[-Wreorder]
+     T gapPenalty;
+       ^~~~~~~~~~
+c:\users\uniya\genomesift\inc
+lude\scoring\scoringmatrix.h:
+20:5: warning:   when 
+initialized here [-Wreorder]
+     ScoringMatrix(T match, 
+T mismatch, T gap)
+     ^~~~~~~~~~~~~

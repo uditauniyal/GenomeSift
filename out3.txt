@@ -1,0 +1,6 @@
+﻿[INFO] Loaded 15 disease entries from database
+[INFO] Alignment completed using Needleman-Wunsch (Global)
+[1m[32m[ALERT] [0m[32mSNP at position 19: A -> T[0m
+[1m[32m[ALERT] [0m[32mSNP at position 80: G -> A[0m
+
+Algorithm: Needleman-Wunsch (Global) | Score: 121 | Identity: 98.40% | Mutations: 2 (0 High/Critical)
